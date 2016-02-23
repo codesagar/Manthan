@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+azure/mgmt/resource/__init__.py
+azure/mgmt/resource/resourcemanagement.py
+azure_mgmt_resource.egg-info/PKG-INFO
+azure_mgmt_resource.egg-info/SOURCES.txt
+azure_mgmt_resource.egg-info/dependency_links.txt
+azure_mgmt_resource.egg-info/not-zip-safe
+azure_mgmt_resource.egg-info/requires.txt
+azure_mgmt_resource.egg-info/top_level.txt

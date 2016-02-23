@@ -1,0 +1,78 @@
+<<<<<<< HEAD
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Project Manthan</h2>
+							<p>A scalable data ETL platform for massive digitization of Medical Records from scanned images of Medical Reports.</p>
+							<form method="post" action="" enctype=multipart/form-data>
+								<div class="field">
+									<label for="email">Upload File</label>
+									<input type="file" name="file" id="file" />
+								</div>
+								<div class="field">
+									<label for="name">Identifier</label>
+									<input type="text" name="ID" placeholder='Enter your Mobile number' id="name" />
+									<ul class="actions">
+									<li><input type="submit" name="submit" value="Upload Report" /></li>
+									<li><input type="submit" name="submit" value="Get Statistics" /></li>
+								</ul>
+								</div>
+							</form>
+
+							<ul class="contact">
+								<li class="fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="fa-phone">(000) 000-0000</li>
+								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							
+							<ul class="contact">
+								<hr>
+								<li class="fa-envelope"><a href="https://in.linkedin.com/in/codesagar">SAGAR PATEL</a>  |  All rights reserved. <br>
+								[first name][last name][dot]exe@gmail.com</li>
+								<li> </li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/skel.min.js"></script>
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<!--[if lte IE 8]><script src="static/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>

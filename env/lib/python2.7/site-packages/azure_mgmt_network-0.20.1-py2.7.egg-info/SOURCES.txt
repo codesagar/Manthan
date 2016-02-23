@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+azure/mgmt/network/__init__.py
+azure/mgmt/network/networkresourceprovider.py
+azure_mgmt_network.egg-info/PKG-INFO
+azure_mgmt_network.egg-info/SOURCES.txt
+azure_mgmt_network.egg-info/dependency_links.txt
+azure_mgmt_network.egg-info/not-zip-safe
+azure_mgmt_network.egg-info/requires.txt
+azure_mgmt_network.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+azure-common
+requests
+
+[get_certificate_from_publish_settings]
+pyopenssl

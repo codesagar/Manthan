@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+azure/mgmt/storage/__init__.py
+azure/mgmt/storage/storagemanagement.py
+azure_mgmt_storage.egg-info/PKG-INFO
+azure_mgmt_storage.egg-info/SOURCES.txt
+azure_mgmt_storage.egg-info/dependency_links.txt
+azure_mgmt_storage.egg-info/not-zip-safe
+azure_mgmt_storage.egg-info/requires.txt
+azure_mgmt_storage.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+azure/__init__.py
+azure_nspkg.egg-info/PKG-INFO
+azure_nspkg.egg-info/SOURCES.txt
+azure_nspkg.egg-info/dependency_links.txt
+azure_nspkg.egg-info/not-zip-safe
+azure_nspkg.egg-info/top_level.txt

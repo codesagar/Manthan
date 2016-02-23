@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+azure/common/__init__.py
+azure_common.egg-info/PKG-INFO
+azure_common.egg-info/SOURCES.txt
+azure_common.egg-info/dependency_links.txt
+azure_common.egg-info/not-zip-safe
+azure_common.egg-info/requires.txt
+azure_common.egg-info/top_level.txt
