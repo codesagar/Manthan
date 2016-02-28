@@ -1,16 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Manthan - Aggregating Medical Records</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="static/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+		<link rel="stylesheet" href="static/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
 	</head>
@@ -19,42 +14,49 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Project Manthan</h2>
+							<p> A scalable Data ETL Platform to Eliminate Noise and Segregate Data into Structured Database for Data Analytics.</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+					<div class="wrapper">
+						<div class="inner">
+						<section>
+							<div class="row">
+								<div class="6u 12u$(medium)">
+									<form method="post" action="" enctype=multipart/form-data>
+										<div class="actions">
+											<label >Identifier</label>
+											<input type="text" name="id" required placeholder="Enter your Mobile No to uniquely identify your records" />
+										</div>
+										<ul class="actions">
+											<li><input type="file" name="file"/></li>
+										</ul>										
+										<ul class="actions">
+											<li><input type="submit" name="submit" class="button special" value="Upload Report"></input></li>
+											<li><input type="submit" name="submit" class="button" value="Get Statistics"></input></li>
+										</ul>
+									</form>
+								</div>
+								<div class="6u 12u$(medium)">
+								<p id="para">Digitizing medical records from scanned images of Reports</p>
+								</div>
+							</div>
+							</div>
+							</section>
+						</div>
+						
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Project Manthan</h2>
-							
-							<form method="post" action="" enctype=multipart/form-data>
-								<div class="field">
-									<label for="email">Upload File</label>
-									<input type="file" name="file" id="file" />
-								</div>
-								<div class="field">
-									<label for="name">Identifier</label>
-									<input type="text" name="id" placeholder='Enter your Mobile number' id="name" required/>
-									<ul class="actions">
-									<li><input type="submit" name="submit" value="Upload Report" /></li>
-									<li><input type="submit" name="submit" value="Get Statistics" /></li>
-								</ul>
-								</div>
-							</form>
-
-							<ol class="contact">
-								<li >
-									A highly scalable data ETL platform for massive digitization of Medical Records from scanned images of Medical Reports.
-								</li>
-								<li class="fa-phone">(000) 000-0000</li>
-								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ol>
-							
-							<ul class="contact">
-								<hr>
-								<li class="fa-envelope"><a href="https://in.linkedin.com/in/codesagar">SAGAR PATEL</a>  |  All rights reserved. <br>
-								[first name][last name][dot]exe@gmail.com</li>
-								<li> </li>
+							<ul class="copyright">
+								<li>&copy; <a href="https://in.linkedin.com/in/codesagar">SAGAR PATEL </li><li><img id="link" src="http://projectmanthan.blob.core.windows.net/data/7MT5Z6CBA2KRO3XA5WVALOP31DFHKLH4.png"></li></a><li><img src="http://projectmanthan.blob.core.windows.net/data/TT4FE0TVU8TKKQI2QXGXRA0BPQV5JXF2.png"> [First + Last Name][dot]exe@gmail.com </li>
 							</ul>
 						</div>
 					</section>

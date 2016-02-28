@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,700|Source+Sans+Pro:300|Lato:400,700|Ubuntu+Condensed|Ubuntu");
 
 /*
 	Solid State by HTML5 UP
@@ -8,6 +8,13 @@
 */
 
 /* Reset */
+
+	#para {
+    padding-left: 1em;
+    font-family: Lato;
+    font-weight 400: 
+    } 
+   
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1624,7 +1631,7 @@
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../images/bg.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -1687,7 +1694,6 @@
 
 			body, input, select, textarea {
 				font-size: 12pt;
-				font-weight: 400;
 			}
 
 		}
@@ -1713,7 +1719,7 @@
 			display: block;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
-			font-weight: 800;
+			font-weight: 700;
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
@@ -1770,7 +1776,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-family: Raleway, Helvetica, sans-serif;
+		font-family: Ubuntu Condensed, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -1921,7 +1927,7 @@
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
-		font-weight: 600;
+		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 0.7em 0;
 		text-transform: uppercase;
@@ -2228,7 +2234,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 	}
 
@@ -2272,20 +2278,26 @@
 
 		ul.actions {
 			cursor: default;
-			list-style: none;
+			padding-top: 1.5em;	
 			padding-left: 0;
 		}
 
 			ul.actions li {
 				display: inline-block;
-				padding: 0 1em 4em 0;
-				margin-top: 1em;
+				padding: 0 1em 0 0;
 				vertical-align: middle;
+				width: 49%;
+				padding-top: 1.5fem;
 			}
 
 				ul.actions li:last-child {
 					padding-right: 0;
 				}
+
+				ul.actions li > * {
+							width: 100%;
+							margin: 0 !important;
+						}
 
 			ul.actions.small li {
 				padding: 0 0.5em 0 0;
@@ -2341,16 +2353,17 @@
 			@media screen and (max-width: 640px) {
 
 				ul.actions {
-					margin: 0 0 2em 0;
+					margin: 0 0 0 0;
 				}
 
 					ul.actions li {
 						padding: 0 0 0 0;
-						display: inline-table;
-						text-align: center;
-						width: 49%;
+						display: inline-block;
+						margin-left: 1%;
+						width: 48%;
 					}
 
+						
 
 						ul.actions li > * {
 							width: 100%;
@@ -2374,7 +2387,7 @@
 
 			ul.contact li {
 				text-decoration: none;
-				margin: 3em 0 0 0;
+				margin: 2.5em 0 0 0;
 				padding: 0 0 0 3.25em;
 				position: relative;
 			}
@@ -2403,7 +2416,7 @@
 				}
 
 				ul.contact li:first-child {
-					margin-top: -2em;
+					margin-top: 0;
 				}
 
 			@media screen and (max-width: 736px) {
@@ -3029,7 +3042,7 @@
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding-top: 1em;
 	}
 
 		#banner .inner {
@@ -3081,7 +3094,7 @@
 			filter: blur(0);
 			opacity: 1;
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-			font-size: 2.25em;
+			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
 		}
@@ -3104,18 +3117,18 @@
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			font-family: Raleway, Helvetica, sans-serif;
+			font-family: Roboto, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 400;
 			letter-spacing: 0.1em;
-			line-height: 2;
-			text-transform: uppercase;
+			line-height: 1.5;
+			
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 0 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 				background-size: auto, cover;
@@ -3128,7 +3141,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 2em 3em 1em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3141,7 +3154,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				
 				margin-bottom: -2.5em;
 			}
 
@@ -3158,7 +3171,7 @@
 				}
 
 				#banner p {
-					font-size: 0.8em;
+					font-size: 1em;
 				}
 
 		}
@@ -3270,7 +3283,7 @@
 
 	.wrapper {
 		background-color: #2e3141;
-		margin: 6.5em 0;
+		margin: 3.5em 0;
 		position: relative;
 	}
 
@@ -3283,14 +3296,14 @@
 			background-size: 100% 100%;
 			content: '';
 			display: block;
-			height: 6.5em;
+			height: 3.5em;
 			position: absolute;
 			width: 100%;
 		}
 
 		.wrapper:before {
 			left: 0;
-			top: -6.5em;
+			top: -3.5em;
 		}
 
 		.wrapper:after {
@@ -3298,7 +3311,7 @@
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.5em;
+			bottom: -3.5em;
 			left: 0;
 		}
 
@@ -3317,7 +3330,7 @@
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 2em 0 1em 0 ;
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -3458,7 +3471,7 @@
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				margin: 4.75em 0;
+				margin: 10.75em 0;
 			}
 
 				.wrapper:before, .wrapper:after {
@@ -3497,7 +3510,7 @@
 			}
 
 				.wrapper:before, .wrapper:after {
-					height: 2.5em;
+					height: 4.5em;
 				}
 
 				.wrapper:before {
@@ -3556,7 +3569,7 @@
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+		padding: 1em 0 3em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3578,7 +3591,7 @@
 		}
 
 		#footer .inner form {
-			margin: 0 3em 0 0;
+			margin: 1em 3em 0 0;
 			width: calc(50% - 1.5em);
 		}
 
@@ -3589,16 +3602,17 @@
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
 			list-style: none;
-			margin: 4em 0 2em 0;
-			padding: 2em 0 0 0;
+			margin: 0 0 2em 0;
+			padding: 1em 0 0 0;
 			width: 100%;
 		}
 
 			#footer .inner .copyright li {
 				border-left: solid 2px rgba(255, 255, 255, 0.125);
-				color: rgba(255, 255, 255, 0.35);
+				color: rgba(255, 255, 255, 0.95);
 				display: inline-block;
-				font-size: 0.9em;
+				font-size: 1em;
+				font-family: Ubuntu;
 				line-height: 1;
 				margin-left: 1em;
 				padding: 0;
@@ -3636,7 +3650,7 @@
 		}
 
 			#footer .inner {
-				padding: 3em 3em 1em 3em ;
+				padding: 0 3em 1em 3em ;
 				display: block;
 				width: 100%;
 			}
@@ -3652,7 +3666,7 @@
 				}
 
 				#footer .inner .copyright {
-					margin: 4em 0 2em 0;
+					margin: 0 0 2em 0;
 				}
 
 	}
@@ -3665,7 +3679,7 @@
 		}
 
 			#footer .inner {
-				padding: 2em 2em 0.1em 2em ;
+				padding: 1em 2em 0.1em 2em ;
 			}
 
 				#footer .inner form {

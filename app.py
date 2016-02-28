@@ -153,17 +153,19 @@ def getByMobileNo(ID):
     	del ids['_id']
         del ids['uID']
     table = json2html.convert(json = agg)
-    print table
+    
     table = table.replace('<table border="1"><tr><th>sample</th><td>','')
     table = table.replace('</td></tr></table></td></tr></table>','</td></tr></table>')
-    return '''
-    <!doctype html>
-    <form action="http://projectmanthan.analytix.me/">
-    <h3><input style="display: inline" type="submit" value="Home">
-    Reports for ''' + ID + ''' &emsp;</h3>
-    </form>
-    '''+table+'''
-    '''
+    table = table.replace('table border','table class="alt" border')
+    return render_template('results.html',table=table)
+    # '''
+    # <!doctype html>
+    # <form action="http://projectmanthan.analytix.me/">
+    # <h3><input style="display: inline" type="submit" value="Home">
+    # Reports for ''' + ID + ''' &emsp;</h3>
+    # </form>
+    # '''+table+'''
+    # '''
 
 
 def id_generator(size=16, chars=string.ascii_uppercase + string.digits):
