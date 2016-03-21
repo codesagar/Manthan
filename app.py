@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, redirect, url_for ,Response, render_template, jsonify
 from werkzeug import secure_filename
-from azure.storage.blob import BlobService
+from azure.storage.blob import BlockBlobService, PublicAccess
 import string
 import random
 import requests, json, csv
@@ -14,7 +14,7 @@ from json2html import *
 from bson import json_util, ObjectId
 from json import dumps, loads
 from datetime import datetime
-
+import csv
 
 app = Flask(__name__, instance_relative_config=True)
 
@@ -24,8 +24,8 @@ storage_key = app.config['STORAGE_KEY']
 hp_api_key = app.config['HP_API_KEY']
 
 
-blob_service = BlobService(account_name='projectmanthan', account_key= storage_key)
-blob_service.create_container('reports', x_ms_blob_public_access='container')
+blob_service = BlockBlobService(account_name='manthan', account_key= storage_key)
+blob_service.create_container('reports', public_access='container')
 
 
 ALLOWED_EXTENSIONS = set(['jpeg','png',"jpg"])
@@ -47,16 +47,16 @@ def upload_file():
                 filename = Randomfilename + '.' + fileextension
                 #blob_service=initilizeAzure()
                 try:
-                    blob_service.put_block_blob_from_file(
+                    blob_service.create_blob_from_stream(
                     'reports',
                     filename,
                     file,
                     )
                 except Exception:
-                    print 'Exception=' + Exception 
+                    print 'Exception=' , Exception 
                     pass
                 #file.save(os.path.join(app.config['UPLOAD_FOLDER'], Randomfilename + '.' + fileextension))
-                ref =  'http://projectmanthan.blob.core.windows.net/reports/' + filename
+                ref =  'http://manthan.blob.core.windows.net/reports/' + filename
                 apikey = hp_api_key
                 url = 'https://api.havenondemand.com/1/api/sync/ocrdocument/v1?url=' + ref + '&apikey='+apikey
                 r = requests.get(url)
@@ -105,14 +105,16 @@ def upload_file():
 
                         for t in range(start, end):
                             value.append(text[t])
-
+                        FinalResult[k]="".join(map(str, value))
+                        value=[]
+                                
+                        
                     elif k in keyalternative:
                         for kalt in keyalternative[k]:
                             if fl==0 and kalt.lower() in text:
                                 fl=1
                                 cnt=text.find(kalt.lower())
                                 print k
-                                print 'allowed_fileter'
                                 print cnt
                                 while ord(str(text[cnt])) >= 58 or ord(str(text[cnt])) < 47:
                                     cnt += 1
@@ -125,9 +127,9 @@ def upload_file():
 
                                 for t in range(start, end):
                                     value.append(text[t])
-                    FinalResult[k]="".join(map(str, value))
-                    value=[]
-                    fl=0
+                                FinalResult[k]="".join(map(str, value))
+                                value=[]
+                                fl=0
                 FinalResult["uID"]=request.form["id"]
                 client = MongoClient()
                 db = client.reports
@@ -157,7 +159,7 @@ def getByMobileNo(ID):
     table = table.replace('<table border="1"><tr><th>sample</th><td>','')
     table = table.replace('</td></tr></table></td></tr></table>','</td></tr></table>')
     table = table.replace('table border','table class="alt" border')
-    return render_template('results.html',table=table)
+    return render_template('results.html',table_tags=table)
     # '''
     # <!doctype html>
     # <form action="http://projectmanthan.analytix.me/">
