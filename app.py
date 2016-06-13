@@ -78,6 +78,8 @@ def upload_file():
                 #             value.append(text[t])
                 #     FinalResult['date']="".join(map(str, value)).replace("i","/")
                 #     value=[]   
+                print 'eeeeeeeee'
+                print text
                 dt = re.search(r'[date:]*([0-9]{1,2}[\/-]([0-9]{1,2}|[a-z]{3})[\/-][0-9]{0,4})', text).group(1)                 
                 dt = dt.replace("/","-")
                 if bool(re.match('[\d/-]+$', dt)):
