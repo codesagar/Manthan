@@ -1,23 +1,6 @@
-azure==1.0.2
-azure-common==1.0.0
-azure-mgmt==0.20.1
-azure-mgmt-common==0.20.0
-azure-mgmt-compute==0.20.0
-azure-mgmt-network==0.20.1
-azure-mgmt-nspkg==1.0.0
-azure-mgmt-resource==0.20.1
-azure-mgmt-storage==0.20.0
-azure-nspkg==1.0.0
-azure-servicebus==0.20.1
-azure-servicemanagement-legacy==0.20.1
-azure-storage==0.20.2
-Flask==0.10.1
-futures==3.0.3
-itsdangerous==0.24
-Jinja2==2.8
-MarkupSafe==0.23
-python-dateutil==2.4.2
-requests==2.9.0
-six==1.10.0
-Werkzeug==0.11.3
-wheel==0.24.0
+pymongo == 3.2.2
+Flask == 0.10.1
+Werkzeug == 0.11.4
+azure_common == 1.1.1
+json2html == 1.0.1
+Requests == 2.9.1
