@@ -24,7 +24,7 @@ storage_key = app.config['STORAGE_KEY']
 hp_api_key = app.config['HP_API_KEY']
 
 
-blob_service = BlockBlobService(account_name='manthan', account_key= storage_key)
+blob_service = BlockBlobService(account_name='projectmanthan', account_key= storage_key)
 blob_service.create_container('reports', public_access='container')
 
 
@@ -56,7 +56,7 @@ def upload_file():
                     print 'Exception=' , Exception 
                     pass
                 #file.save(os.path.join(app.config['UPLOAD_FOLDER'], Randomfilename + '.' + fileextension))
-                ref =  'http://manthan.blob.core.windows.net/reports/' + filename
+                ref =  'http://projectmanthan.blob.core.windows.net/reports/' + filename
                 apikey = hp_api_key
                 url = 'https://api.havenondemand.com/1/api/sync/ocrdocument/v1?url=' + ref + '&apikey='+apikey
                 r = requests.get(url)
